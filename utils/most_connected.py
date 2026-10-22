@@ -1,6 +1,6 @@
 
 def most_connected(df, ftype):
-    # Your code goes here
-    rank = df[df["strength"] == ftype]["friend1"].value_counts()
-    print(f'{df[df["friend1"] == rank.index[0]]["Name_friend1"].max()} has most {ftype}')
-    return
+    filtered = df[df["strength"] == ftype] # filter the pokemon dataset by ftype
+    top_pok = filtered["Name_friend1"].value_counts().index[0] # rank and find the first
+    return f'{top_pok} has most {ftype}'
+    

@@ -5,7 +5,6 @@ def friend_merger(
         df,
         cols_to_keep=("Name", "Generation", "Legendary", "Type_Full")
 ):
-    # Your code goes here
     cols = list(cols_to_keep)
     
     # Merge attributes for friend1

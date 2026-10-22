@@ -5,10 +5,11 @@ def battle(df, name1, name2, type_chart):
     pokemon_1 = get_pokemon(df, name1)
     pokemon_2 = get_pokemon(df, name2)
 
+
     if pokemon_1["speed"] >= pokemon_2["speed"]: #determine who attacks first
         attacker = pokemon_1
         defender = pokemon_2
-    elif pokemon_1["speed"] < pokemon_2["spreed"]:
+    elif pokemon_1["speed"] < pokemon_2["speed"]:
         attacker = pokemon_2
         defender = pokemon_1
 
@@ -22,5 +23,5 @@ def battle(df, name1, name2, type_chart):
 
     if pokemon_1["hp"] > 0:
         return pokemon_1
-    elif pokemon_2["hp"] < 0:
+    else:
         return pokemon_2
