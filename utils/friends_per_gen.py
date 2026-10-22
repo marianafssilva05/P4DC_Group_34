@@ -1,3 +1,4 @@
+import pandas as pd
 
 def friends_per_gen(df):
     # Select friendship pairs with generation and legendary status for both sides

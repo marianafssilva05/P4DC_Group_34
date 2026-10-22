@@ -8,7 +8,7 @@ def take_turn(attacker, defender, type_chart):
     if defender["hp"] < 0:
         defender["hp"] = 0 
 
-    print(f"{atacher["name"]} attacks {defender ["name"]} for {damage} damage")
+    print(f'{attacker["name"]} attacks {defender["name"]} for {damage} damage')
 
     if mult > 1:
         print("Super Effective")
@@ -17,4 +17,4 @@ def take_turn(attacker, defender, type_chart):
     elif mult == 0:
         print("No effect")
 
-    print(f"{defender["name"]}'s remaining HP {defender["hp"]}")
+    print(f'{defender["name"]}\'s remaining HP {defender["hp"]}')
